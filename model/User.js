@@ -1,5 +1,7 @@
+// Importing packages
 const mongoose = require("mongoose");
 
+// Create Schema and Model 
 const userSchema = new mongoose.Schema({
   name: {
     type: String,

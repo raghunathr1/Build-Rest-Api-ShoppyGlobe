@@ -1,12 +1,10 @@
+// Importing Files and packages
 const express = require("express");
 const cors = require("cors");
-
 const connectDB = require("./config/db");
-
 const productRoutes = require("./routes/productRoutes");
 const cartRoutes = require("./routes/cartRoutes");
 const userRoutes = require("./routes/userRoutes");
-
 const app = express();
 
 // Database Connection

@@ -4,7 +4,7 @@
 This is a REST API built using Node.js, Express.js, and MongoDB Atlas for managing products, carts, and user authentication.
 
 ## Github 
-
+- https://github.com/raghunathr1/Build-Rest-Api-ShoppyGlobe
 
 ## Features
 
@@ -23,7 +23,7 @@ This is a REST API built using Node.js, Express.js, and MongoDB Atlas for managi
 - JWT
 - Thunder Client
 
-## API Endpoints
+
 
 ### Products
 
@@ -43,3 +43,12 @@ POST /login
 POST /cart
 PUT /cart/:id
 DELETE /cart/:id
+
+## Installation
+
+1. Clone the repository
+- git clone 
+2. Install dependencies
+- npm install
+3. Start the server
+- npm run dev
