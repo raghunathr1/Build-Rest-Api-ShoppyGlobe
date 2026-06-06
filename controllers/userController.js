@@ -83,12 +83,12 @@ const loginUser = async (req, res) => {
       });
     }
 
-    // Generate JWT Token
+    // Generate JWT Token using .env secret
     const token = jwt.sign(
       {
         id: user._id,
       },
-      process.env.JWT_SECRET || "mysecretkey",
+      process.env.JWT_SECRET,
       {
         expiresIn: "1d",
       }
@@ -111,4 +111,7 @@ const loginUser = async (req, res) => {
   }
 };
 
-module.exports = { registerUser, loginUser };
+module.exports = {
+  registerUser,
+  loginUser,
+};

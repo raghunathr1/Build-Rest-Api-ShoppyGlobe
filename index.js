@@ -1,10 +1,16 @@
-// Importing Files and packages
+// Load Environment Variables
+require("dotenv").config();
+
+// Importing Files and Packages
 const express = require("express");
 const cors = require("cors");
+
 const connectDB = require("./config/db");
+
 const productRoutes = require("./routes/productRoutes");
 const cartRoutes = require("./routes/cartRoutes");
 const userRoutes = require("./routes/userRoutes");
+
 const app = express();
 
 // Database Connection
@@ -22,7 +28,7 @@ app.use("/cart", cartRoutes);
 app.use("/", userRoutes);
 
 // Server
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
